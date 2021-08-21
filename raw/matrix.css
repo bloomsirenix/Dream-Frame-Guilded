@@ -1,0 +1,949 @@
+:root {
+    -minimal-wav-width: 330px;
+}
+
+.OptionsMenu-options-control::before {
+    content: "Matrix Frame V2(Dream Frame fork)";
+    background: #000000;
+    padding: 7px 26px;
+    color: #03A062;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 4px;
+}
+
+
+/* Main Container to fix the issue of transparent nav */
+
+.WebAppV2-container::before,.WebAppV2-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.WebAppV2-container::after {
+    background-image: var(--Background);
+    background-size: cover;
+    background-repeat: var(--BackgroundRepeat);
+    background-position: center;
+    opacity: var(--BackgroundBrightness);
+    filter: blur(var(--BackgroundBlur));
+
+}
+
+.WebAppV2-container::before {
+    background: rgba(0,0,0,0.9);
+}
+
+/** Scrollbars **/
+/* Chat */
+.ChatChannelMessagesList-container::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0) !important;
+    color: #03A062;
+}
+/* Members List */
+.PageSidebarWrapper-tab:hover::-webkit-scrollbar-thumb {
+    background: rgba(4, 166, 172, 0.397) !important;
+    color: #03A062;
+}
+/* Channels List */
+.TeamNavMenu-wrapper:hover::-webkit-scrollbar-thumb {
+    background: rgba(4, 166, 172, 0.397) !important;
+    color: #03A062;
+}
+/* Settings */
+.OptionsMenu-option-content::-webkit-scrollbar-thumb {
+    background: white !important;
+    color: #03A062;
+}
+/** Context Menu **/
+/* Background */
+.TransientMenu-container-style-default {
+    background-color: rgba(4, 166, 172, 0.397);
+    border: none;
+    backdrop-filter: blur(10px);
+    border-radius: 7px !important;
+    color: #03A062;
+}
+/* Border */
+.ActionMenu-section:not(:first-child) {
+    border-top: none;
+}
+
+/** Adding the Custom Background **/
+/* Background */
+body::before {
+    content: "";
+    background-image: var(--Background);
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-size: cover;
+    background-repeat: var(--BackgroundRepeat);
+    background-position: center;
+    opacity: var(--BackgroundBrightness);
+    filter: blur(var(--BackgroundBlur));
+    transform: rotate(var(--BackgroundRotation));
+}
+
+/** Removing Gray Backgrounds */
+/* App */
+body {
+    background-color: black;
+    color: #03A062;
+}
+/* Chat */
+.LayeredPageContent-content {
+    background: transparent;
+    color: #03A062;
+}
+
+/* Chat Header */
+.ScreenHeader-container, .ChannelWrapper-container, .ChannelWrapper-container {
+    background: transparent;
+    color: #03A062;
+    border-bottom: none;
+}
+/* Members List */
+.SidebarWrapper-container {
+    background: transparent;
+    color: #03A062;
+}
+.SidebarInfoItem-container {
+    background: transparent;
+    color: #03A062;
+}
+/* Channels */
+.TeamNavMenu-container {
+    background-color: transparent;
+    color: #03A062;
+}
+.TeamPageNavV3-container {
+    background: transparent;
+    color: #03A062;
+}
+.WebAppV2-sidebar {
+    background-color: transparent;
+    color: #03A062;
+}
+/* Groups */
+.GroupSelector-container {
+    background-color: transparent;
+    color: #03A062;
+}
+.GroupSelectorItem-container-base-group {
+    box-shadow: none;
+    color: #03A062;
+}
+.DraggableHandle-container.GroupSelectorItem-container.GroupSelectorItem-container-base-group {
+    height: 66px;
+    color: #03A062;
+}
+/*** Home ***/
+/** Sidebar **/
+.WebAppSidebar-container.WebAppV2-sidebar {
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px) brightness(0.8);
+    color: #03A062;
+}
+.NavV4Sidebar-container.WebAppV2-minimal-nav-sidebar {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px) brightness(0.8);
+    box-shadow: none;
+    color: #03A062;
+}
+.NavV4BadgedItemIcons-container.NavV4Footer-badged-item-icons {
+    background: transparent;
+    color: #03A062;
+}
+.NavV4FooterMenuIcon-container.NavV4FooterMenuIcon-container-active.NavV4Footer-menu-icon {
+    background: transparent;
+    color: #03A062;
+}
+.NavV4Footer-container-menu-active .NavV4Footer-right {
+    background-color: transparent;
+    color: #03A062;
+}
+.NavV4Footer-right {
+    background-color: transparent;
+    color: #03A062;
+}
+.NavV4Footer-wrapper {
+    background-color: rgba(4, 166, 172, 0.397) !important;
+    margin: 10px;
+    border-radius: 7px;
+}
+.NavV4FooterMenuIcon-container.NavV4Footer-menu-icon {
+    background: transparent;
+}
+/** Direct Messages **/
+/* Sidebar */
+.ChatChannelList-container {
+    background: transparent !important;
+}
+.ChatChannelListItem-container-selected {
+    background: rgba(4, 166, 172, 0.397);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+/** Matchmaking **/
+.StretchBackground-container.StretchBackground-container-default.StretchFadeBackground-stretch-bg {
+    display: none;
+    color: #03A062;
+}
+/* Featured Matches */
+.StretchBackground-container.StretchBackground-container-quarter-right.StretchFadeBackground-stretch-bg {
+    display: none;
+}
+/* Season Leaderboard */
+.TextInputWithLabel-container.TextInputWithLabel-container-desktop.TextInputWithLabel-container-label-retracted.TextInputWithLabel-container-dropdown.TypeaheadInput-input {
+    border-radius: 7px;
+}
+.Select-control {
+    border-radius: 7px !important;
+}
+.ScrimFinderLeaderboardTeam-container::after {
+    background: transparent;
+}
+.TypeaheadMenu-container {
+    background: rgba(4, 166, 172, 0.397) !important;
+    border-radius: 7px;
+    border: none !important;
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+.SelectMenuItem-container.SelectMenuItem-container-selected.SelectMenuItem-container-desktop.SelectMenuItem-container-size-md {
+    border-radius: 7px;
+}
+/** Find a Server **/
+.IconNavMenu-nav {
+    border-bottom: none;
+}
+/** Explore Players **/
+/* Cards */
+.PlayerCard-container {
+    background: rgba(4, 166, 172, 0.397) !important;
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+
+/*** Channels Sidebar ***/
+/** Messages **/
+/* Background */
+.ChatV2Message-container:not(.ChatV2Message-container-editing):hover, .ChatV2Message-container.ChatV2Message-container-replying {
+    background-color: transparent;
+}
+
+
+/* Some hover on messages would be nice */
+
+.ChatV2Message-container {
+    /* We want some padding tho */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #03A062;
+}
+
+.ChatV2Message-container:hover {
+    background-color: rgba(4, 166, 172, 0.397) !important;
+    color: #03A062;
+}
+/* Quick Action Bar */
+.QuickActionBar-container {
+    background: rgba(4, 166, 172, 0.397);;
+    border-radius: 7px;
+    border: none;
+    padding: 4px 4px;
+}
+/** Header **/
+/* Header */
+.TeamPageNavV3-header {
+    box-shadow: none;
+}
+.PageNavHeaderWrapper-container.TeamNavHeader-container.TeamPageNavV3-header {
+    margin-top: 10px;
+}
+/* Server Cover */
+.StretchBackground-container.StretchBackground-container-default.StretchFadeBackground-stretch-bg {
+    border-radius: 7px;
+    -webkit-mask-image: none !important;
+}
+/** Channels **/
+/* Selected Channel */
+.TeamChannelItemContents-container-selected {
+    border-radius: 7px;
+}
+/* Unread Channels */
+.TeamChannelItemContents-container-unread:before {
+    width: 257px;
+    height: 33px;
+    top: 1px;
+    border-radius: 7px;
+    background-color: rgba(245, 196, 0, 0.25);
+    color: #03A062;
+    left: 0px;
+}
+/* Fonts */
+.TeamNavSectionItem-name, .TeamChannelItemContents-name, .ChannelIcon-icon-primary, .ChannelListHeader-container-type-category .ChannelListHeader-text, .ChannelListHeader-container-type-default .ChannelListHeader-text { /* Changing font to white */
+    color: white;
+}
+.ChannelIcon-icon-primary, .ChannelIcon-icon-secondary {
+    fill: white;
+}
+/*** Chat ***/
+/** Messages **/
+.ChatV2Message-container-active {
+    background-color: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+}
+/* Dividers */
+.ChatV2Message-container-type-system:not(.ChatV2Message-container-same-next-type):not(.ChatV2Message-container-last-message):not(.ChatV2Message-container-last-message-for-day):after {
+    display: none;
+}
+/* Dates and New Messages Dividers */
+.WordDividerLine-line {
+    display: none;
+}
+.WordDividerLine-container {
+    justify-content: left;
+}
+.WordDividerLine-container-word-style-chat .WordDividerLine-word {
+    line-height: 29px;
+    border-radius: 7px;
+    text-align: left;
+    margin-left: 32px;
+    color: #03A062 !important;
+    background: #213802;
+}
+/** Code Blocks **/
+/* Background */
+.CodeContainerRenderer-container {
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    border-radius: 7px !important;
+}
+.CodeLineRenderer {
+    background-color: transparent;
+}
+/* Code Language */
+.CalloutBadge-container {
+    padding: 0 10px;
+    border-radius: 50px;
+    color: #03A062;
+}
+/** Images **/
+/** Members **/
+/* List */
+.ItemManagerListItem-container:not(:last-child), .ItemManagerHeader-container {
+    border-bottom: none;
+    color: #03A062;
+}
+.ItemManagerListItem-container-selectable.ItemManagerListItem-container-options-active:after, .ItemManagerListItem-container-selectable:hover:after {
+    opacity: 1;
+    color: #03A062;
+}
+.ItemManagerListItem-container-selectable:after {
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    color: #03A062;
+    z-index: -1;
+}
+/* Header */
+.SelectToggleIcon-container.SelectToggleIcon-container-clickable.ItemManagerHeader-select-toggle {
+    border-radius: 50px;
+    border: 2px white solid;
+}
+.SearchBarInput-container-bordered {
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+/** Media **/
+/* Grid */
+.MediaDisplayItemV3-container {
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+.ProgressiveLoadedImage-container-cover img {
+    object-fit: cover;
+    border-radius: 7px;
+    border: none;
+}
+.MediaDisplayItemV3Contents-container::after {
+    display: none;
+}
+/** Docs **/
+/* Background */
+.DocDisplayItem-container {
+    background-color: rgba(4, 166, 172, 0.397);
+    -webkit-user-select: none;
+    border-radius: 7px;
+    box-shadow: none;
+    color: #03A062;
+    backdrop-filter: blur(10px);
+}
+.DocDisplayItem-container::after {
+    display: none;
+}
+.DocSummaryInfo-container {
+    background-color: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    border-radius: 0px 0px 7px 7px;
+}
+/** Calendar **/
+/* Background */
+.FullSizedCalendar-week {
+    border: none;
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+.UpcomingCalendarDay-container {
+    border: none;
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+    border-radius: 7px;
+    color: #03A062;
+}
+.UpcomingCalendar-container {
+    position: relative;
+    border-radius: 1px;
+    background-color: transparent;
+    width: 100%;
+    color: #03A062;
+}
+/* Borders */
+.FullSizedCalendar-day {
+    border-right: none;
+    color: #03A062;
+}
+.FullSizedCalendar-week {
+    border: none;
+    color: #03A062;
+}
+/* Events */
+.FullSizedCalendarEvent-details {
+    border-radius: 7px;
+    width: 97%;
+    margin-left: 4px;
+    color: #03A062;
+}
+/** Annoucements **/
+/* Background */
+.OverviewWidgetItemWrapper-container-type-filled {
+    background-color: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+.OverviewWidgetItemWrapper-container.OverviewWidgetItemWrapper-container-standalone.OverviewWidgetSkeleton-container.OverviewWidgetSkeleton-container-announcement.OverviewWidgetSkeleton-container-type-filled {
+    background-color: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+.DraftInputWithTitleV2-container-desktop.DraftInputWithTitleV2-container-unexpanded {
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+/* Upcoming Events and Latest Annoucements */
+.TeamOverviewContentItemCard-container {
+    color: #03A062;
+    border-radius: 7px;
+    background-color: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    backdrop-filter: blur(10px);
+}
+
+/* Borders */
+.ContentMetadataCreationInfo-container.PostMetadata-creation-info, .ContentMetadataReplyInfo-container.ContentMetadataReplyInfo-container-can-reply.PostMetadata-reply-info {
+    border: none;
+}
+/** Post a Reply aka Leave a comment */ /* Guilded is great, that's my comment */
+/* Background */
+.Editor-container {
+    background: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+/* Tools */
+.SlateToolbarStrip {
+    border-top: none;
+    border-bottom: none;
+    padding: 5px 0px;
+    background: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+}
+.SlateToolbarStrip-iconGroup:not(:last-child) {
+    border-right: none;
+    border-radius: 7px;
+    background: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    margin: 0px 4px;
+}
+/* Other Comments */
+.ReplyPanel-container.ReplyPanel-container-viewing.ReplyPanel-container-size-md.ReplyPanel-container-desktop.RepliesDisplayV2-item {
+    background-color: rgba(4, 166, 172, 0.397);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+.ContentMetadataReplyInfo-container.PostMetadata-reply-info {
+    border: none;
+    color: #03A062;
+}
+/** Overview **/
+/* About */
+.OverviewWidgetItemWrapper-container.OverviewWidgetItemWrapper-container-clickable.OverviewWidgetItem-container.OverviewWidgetItem-container-icon-alignment-left.SocialLinkWidgetItem-container.SocialLinkWidgetItem-container-desktop {
+    border-radius: 7px;
+    color: #03A062;
+}
+.IconAndLabel-icon, .OverviewWidgetItem-icon {
+    fill: white;
+}
+
+/* Leadboards */
+.GameContext-container.TeamOverviewLeaderboardItem-leaderboard-container.TeamOverviewLeaderboardSection-leaderboard-container {
+    background-color: rgba(4, 166, 172, 0.397);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+/* Pinned */
+a.TeamPostRow-container.TeamPostRow-container-desktop.PinnedAnnouncement-container.PinnedAnnouncements-announcement {
+    background-color: rgba(4, 166, 172, 0.397);
+    border-radius: 7px;
+    color: #03A062;
+}
+/* Gradinet Dropdown */
+.GradientBackground-container {
+    background: none;
+    color: #03A062;
+}
+/* Top Cover and Icon */
+img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
+    border-radius: 10px !important;
+    margin-left: 10px;
+    color: #03A062;
+}
+.TeamOverviewBanner-container {
+    border: none;
+    color: #03A062;
+}
+.TeamPlaqueV2-profile-pic-placeholder::after {
+    display: none;
+    color: #03A062;
+}
+.SkeletonPlaceholder-container.TeamPlaqueV2-profile-pic-placeholder {
+    border-radius: 7px;
+    color: #03A062;
+}
+/** Input Box **/
+/* Gray Box - Archived */
+.ChatChannelArchivedControl-container {
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    background: rgba(4, 166, 172, 0.397);
+    border: none;
+    width: 100%;
+    color: #03A062;
+}
+/* Background */
+.ChatChannelInput-container .ChatChannelInput-editor {
+    background: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+}
+/* Seperator */
+.SlateInsertToolbar-container:after {
+    display: none;
+    color: #03A062;
+}
+/* Upload Media */
+.SlateToolbarMenuIcon, .ReactionPickerButton-icon {
+    fill: white;
+    color: #03A062;
+}
+/* Border */
+.ChatChannelInput-container {
+    border-top: none;
+    color: #03A062;
+}
+/** Embeds **/
+/* Background */
+.OpenGraphEmbed-content {
+    min-height: 72px;
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    border: none;
+    color: #03A062;
+}
+.OpenGraphEmbedImage-container-playable:before, .ProgressiveLoadedImage-container {
+    border-radius: 7px;
+}
+.ChatEmbed-container.ChatEmbedsRenderer-embed {
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    background-color: rgba(4, 166, 172, 0.397);
+    border: none;
+    color: #03A062;
+}
+/** Achrived Thread **/
+/* Background */
+.ChatMessageThread-container {
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+.ChatV2MessageReplyTooltip-content-wrapper {
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    border: none;
+    color: #03A062;
+}
+.ChatV2MessageReplyTooltipInput-title-container {
+    margin-bottom: 5px;
+    border-radius: 7px !important;
+}
+.ChatV2MessageReplyTooltip-arrow {
+    display: none;
+}
+/* Thread */
+.LastReplyDisplay-container {
+    background: rgba(72, 75, 81, 0.5);
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #03A062;
+}
+.LastReplyDisplay-container:before {
+    display: none;
+    color: #03A062;
+}
+/** Emoji Picker **/
+/* Adjustments */
+.ReactionPicker-container-desktop {
+    width: 420px;
+    height: 358px;
+    color: #03A062;
+}
+.ReactionPicker-container.ReactionPicker-container-desktop {
+    margin-left: -62px;
+    margin-top: -10px;
+    color: #03A062;
+}
+/* Content */
+.ReactionPicker-content {
+    margin-left: 50px;
+    height: 358px;
+    color: #03A062;
+}
+.ReactionPicker-list {
+    height: 250px !important;
+    color: #03A062;
+}
+/* Category */
+.ReactionPickerNavbar-container {
+    left: -210px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 149px;
+    border-radius: 0px 0px 7px 7px;
+    border: none;
+    color: #03A062;
+}
+
+.HoverContext-container.ReactionPickerNavbarItem {
+    transform: rotate(-90deg);
+    color: #03A062;
+}
+.ReactionPickerNavbarItem-active {
+    border-bottom: none;
+    padding-bottom: 8px;
+    border-right: 3px solid #f5c400;
+    color: #03A062;
+}
+/*** Settings ***/
+.Form-container-section-border .Form-section:not(:first-child), .Form-container-section-border-unpadded .Form-section:not(:first-child), .Form-container-row-border .Form-section:not(:first-child) {
+    border-top: none;
+    color: #03A062;
+}
+.GuildedTableHeader-container {
+    border-bottom: none;
+    color: #03A062;
+}
+.FormSection-row-border-unpadded:not(:first-child) {
+    border-top: none;
+    color: #03A062;
+}
+
+.RadioOptionPanel-container {
+    border-radius: 7px;
+    border: none;
+    background: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+}
+.CopyableTextbox-container.CopyableTextbox-container-desktop.CopyableTextbox-container-form.CopyableTextbox-container-type-embed {
+    border-radius: 7px;
+    color: #03A062;
+}
+.ModalV2-container-fullscreen {
+    height: 70vh;
+    width: 60vw;
+    color: #03A062;
+}
+.ModalV2-container {
+    background-color: transparent;
+}
+.StatusContext-container.OptionsMenu-option-content {
+    background: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    border-radius: 0px 7px 7px 0px;
+    backdrop-filter: blur(10px);
+}
+.OptionsMenuPageWrapper-container {
+    border-radius: 0px 7px 7px 0px;
+    background: transparent;
+    color: #03A062;
+}
+/* Backdrop */
+.ModalWrapper-container {
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+/** Sidebar and Right Panel **/
+.ModalV2-container, .OnboardingExperience-background {
+    border-radius: 7px;
+    color: #03A062;
+}
+.OptionsMenu-container-desktop .OptionsMenu-options-control {
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    border-radius: 7px 0px 0px 7px;
+    color: #03A062;
+}
+
+/** Sidebar **/
+/* Save Controls */
+.OptionsMenu-desktop-save-controls {
+    margin-bottom: 30px;
+    color: #03A062;
+}
+/*** Profiles ***/
+/* Background */
+.UserProfileV3-container {
+    background: transparent;
+    color: #03A062;
+}
+/** Teams **/
+/* Backgrounds */
+.CardWrapper-container {
+    background: rgba(4, 166, 172, 0.397);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    color: #03A062;
+}
+.CardWrapper-container:not(.CardWrapper-container-highlighted)::after {
+    border: none;
+    color: #03A062;
+}
+
+/** Header - Cover Area **/
+/* Cover */
+.UserProfileBackground-container.StretchFadeBackground-container.StretchFadeBackground-container-type-default {
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 80vw;
+    color: #03A062;
+}
+/* Menu */
+.HorizontalTab-highlighter {
+    background: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(10px);
+    height: 43px;
+    border-radius: 7px;
+    z-index: -1;
+    color: #03A062;
+}
+.HorizontalTab-container-selected .HorizontalTab-tab-text {
+    color: #03A062;
+    font-weight: bold;
+}
+/** Feed **/
+/* Leave a message for #user */
+.DraftInputWithTitleV2-title-wrapper {
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+}
+/* Post */
+.UserProfilePostPanel-container-highlight {
+    border-top: 7px solid #f5c400;
+}
+.UserProfilePostPanel-container {
+    background-color: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+.PublishedPostPage-wrapper {
+    color: #03A062;
+    background-color: transparent;
+}
+.PublishedPostPage-share-wrapper {
+    color: #03A062;
+    border-top: none;
+    padding-top: 0px;
+}
+/*** Pop Ups and Modals ***/
+/** Set Your Status **/
+/* Background */
+.ModalV2-container.ModalV2-container-has-header, .ModalHeaderV2-container {
+    color: #03A062;
+    background: rgba(4, 166, 172, 0.397);
+}
+/* Borders */
+.UserStatusOverlay-container .UserStatusMessageExipreDisplay-container, .ModalV2-container-has-header .ModalV2-modal-content, .ModalFooter-container {
+    border-top: none;
+    color: #03A062;
+}
+/** Pinned Messages **/
+/* Background */
+.ChannelPinnedMessages-container {
+    background: rgba(4, 166, 172, 0.397);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    color: #03A062;
+    border: none;
+}
+/* Heading */
+.ChannelPinnedMessages-header {
+    color: white;
+}
+/* Messages */
+.ChatV2PinnedMessage-message-wrapper {
+    border-radius: 7px;
+    color: #03A062;
+    background: rgba(4, 166, 172, 0.397);;
+}
+/** Profile **/
+/* Background */
+.ProfileHoverCardV2Overlay-container {
+    background: transparent;
+    color: #03A062;
+}
+/* Network IDs */
+.ProfileHoverCardV2Overlay-info-item:not(:first-child) {
+    border-top: none;
+    color: #03A062;
+}
+.UserAliasesListDisplayItem-icon, .TeamMemberRolesDisplay-header {
+    fill: white;
+    color: #03A062;
+}
+/* Footer */
+.ProfileCardMenuItem-container:not(:first-child):before {
+    display: none;
+    color: #03A062;
+}
+/** Tooltip **/
+/* Background */
+.HoverContextTooltip-text-wrapper {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 7px;
+    color: #03A062;
+}
+/* Arrow */
+.HoverContextTooltip-arrow {
+    display: none;
+    color: #03A062;
+}
+/** Media Split Viewer */
+.MediaSplitView-container {
+    display: contents; /* Should help keep it centered */
+    color: #03A062;
+}
+
+
+.ProfileHoverCardV2Overlay-action-menu {
+    background-color: rgba(4, 166, 172, 0.397);
+}
+
+.SetupUpsell-container {
+    margin: 7px;
+    border-radius: 3px;
+}
+
+img.UserProfileBackground-image {
+    width: calc(100% - 100px);
+    color: #03A062;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+.NavV4SectionSidebar-container, .NavV4FooterGlobalContextDisplay-teams-wrapper, .NavV4Footer-footer-content {
+    background: transparent;
+    color: #03A062;
+}
+
+
+.StreamChannelDisplay-container {
+    background-color: rgba(4, 166, 172, 0.397);
+    color: #03A062;
+    backdrop-filter: blur(20px) brightness(0.6);
+    border-radius: 10px;
+    border: none !important;
+    margin: 10px;
+}
+
+.StreamChannelWindowControl-container.AppWindow-control.StreamChannelWindow-container {
+    background: #0000009e;
+    color: #03A062;
+}
+
+.VoiceConnectionDisplayPanelContents-info-wrapper {
+    border: none !important;
+    color: #03A062;
+}
+
+.Resizable-container.VoiceChannelDisplay-container.VoiceChannel-display {
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(4, 166, 172, 0.397);
+    backdrop-filter: blur(20px) brightness(0.6);
+    color: #03A062;
+}
+
+.ReactionPickerFooter-container {
+    border: none;
+    margin: -10px 0px 10px 10px;
+    border-radius: 7px;
+    width: calc(100% - 20px);
+    color: #03A062;
+}
+
+.ChatSummary-container {
+    background: transparent;
+    color: #03A062;
+}
+.TeamPlaqueV2-container.TeamPlaqueV2-container-desktop.TeamPageContent-team-plaque {
+    margin-top: 90px;
+    color: #03A062;
+}
